@@ -30,7 +30,7 @@ public class Helicoptero {
         System.out.println("TRANSFERINDO CONHECIMENTO PARA => " + nome);
         return true;
     }
-
+                                            // Parâmetros ===> (String nome1)
     public boolean transferirComoPilotar(String nome1, String nome2) {
         if (nome1.isBlank() && nome2.isBlank()) {
             System.out.println("OS NOMES NÃO PODE SER EM BRANCO");
