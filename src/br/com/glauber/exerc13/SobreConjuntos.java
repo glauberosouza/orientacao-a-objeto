@@ -1,7 +1,6 @@
 package br.com.glauber.exerc13;
 
 import java.util.HashSet;
-import java.util.Set;
 
 public class SobreConjuntos {
 
@@ -29,9 +28,10 @@ public class SobreConjuntos {
         HashSet conjunto3 = new HashSet<>();
         conjunto3.add(10);
         conjunto3.add(40);
+
         // INTERSECÇÃO -> O QUE ELES TÊM EM COMUM
         conjunto.retainAll(conjunto3);
-        System.out.println("RESULTADO DA INTERSECÇÃO DO PRIMEIRO CONJUNTO COM O ULTIMO: " + conjunto);
+            System.out.println("RESULTADO DA INTERSECÇÃO DO PRIMEIRO CONJUNTO COM O ULTIMO: " + conjunto);
         conjunto.clear();
         System.out.println("RESULTADO DEPOIS DE LIMPAR O PRIMEIRO CONJUNTO: " + conjunto);
     }

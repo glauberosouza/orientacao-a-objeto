@@ -15,6 +15,7 @@ public class ConjuntosHomogeneos {
         for (String texto : conjunto) {
             System.out.println("RESULTADO DOS VALORES ATRIBUIDOS AO CONJUNTO: " + texto);
         }
+
         // CONJUNTO HOMOGENEO ORDENADO
         var conjuntoInteiros = new TreeSet<Integer>();
         conjuntoInteiros.add(30);
