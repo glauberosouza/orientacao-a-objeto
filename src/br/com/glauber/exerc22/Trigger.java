@@ -24,7 +24,7 @@ public class Trigger {
             if (sensor.wasSomethingDetected() && actionDone) {
                 continue;
             } else if(sensor.wasSomethingDetected()){
-                System.out.println("ALERTA! -> TRIGGER: " + this.name + " ON INICIANDO AÇÃO -> " + this.action);
+                System.out.println("ALERTA! -> TRIGGER: " + this.name + "ON INICIANDO AÇÃO -> " + this.action);
                 this.actionDone = true;
             }else{
                 System.out.println("TUDO CERTO NO SENSOR: " + sensor.serialNumber);
