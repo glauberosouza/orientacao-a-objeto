@@ -1,6 +1,5 @@
 package br.com.glauber.exerc26;
 
-
 import java.util.Scanner;
 
 public class SobreAbstracao {
@@ -33,7 +32,8 @@ public class SobreAbstracao {
         //Professor congela a matrix porque têm permissão
         simulacaoDaMatrix.professor.ativarCongelamentoMatrix();
         //Quantidade de atores na cena
-        System.out.println("A quantidade de atores que foram congelados foram: " + simulacaoDaMatrix.atores.size());
+        System.out.println("A quantidade de atores que foram congelados: " + simulacaoDaMatrix.qtsDeAtoresCongelados().size());
+        System.out.println("Quantidade de pessoas que não foram congeladas: " + simulacaoDaMatrix.totalPessoasNaMatrix());
 
         input.close();
     }

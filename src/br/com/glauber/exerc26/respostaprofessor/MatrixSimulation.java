@@ -8,6 +8,7 @@ public class MatrixSimulation {
     List<Humanoid> people = new ArrayList<>();
 
     public MatrixSimulation(int numberOfExtraActors) {
+
         this.numberOfExtraActors = numberOfExtraActors;
     }
 
@@ -70,6 +71,7 @@ public class MatrixSimulation {
     }
 
     public int totalInSimulation() {
+
         return people.size();
     }
 }

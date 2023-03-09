@@ -8,6 +8,9 @@ public class MatrixSimulation {
     private boolean on;
 
     List<Ator> atores;
+    List<Pessoas> qtdPessoasNaMatrix = new ArrayList<>(){{add(professor);
+            add(recruta);}
+    };
     MulherDeVermelho mulherDeVermelho;
     Professor professor;
     Recruta recruta;
@@ -43,4 +46,12 @@ public class MatrixSimulation {
         if (testeAprovado == true)
             System.out.println("o recruta olhou para a mulher, um dos atores se transforma em agente e ameaçou matar o recruta.");
     }
+    public List<Ator> qtsDeAtoresCongelados() {
+        return this.atores;
+    }
+
+    public int totalPessoasNaMatrix() {
+        return qtdPessoasNaMatrix.size();
+    }
+
 }
