@@ -14,8 +14,8 @@ public class ContaCorrente implements Conta{
 
     @Override
     public void sacar(double valor) {
-        if(saldo < valor){
-            System.out.println("Valor inválido, saque maior que o seu saldo " + saldo);
+        if(valor > saldo){
+            System.out.println("Valor inválido, saque maior que o seu saldo " + " Saldo Atual:" + saldo);
         }else {
             this.saldo -= valor;
             System.out.println("Saque efetuado com sucesso: " + this.saldo);
@@ -25,7 +25,7 @@ public class ContaCorrente implements Conta{
     @Override
     public void depositar(double valor) {
         if(valor <= 0 ){
-            System.out.println("Valor de deposito inválido: " + saldo);
+            System.out.println("Valor de deposito inválido: " + " Saldo Atual:" + saldo);
         }else{
             saldo += valor;
         }
@@ -34,7 +34,7 @@ public class ContaCorrente implements Conta{
     @Override
     public void transferir(double valor, Conta conta) {
         if(saldo < valor){
-            System.out.println("Valor insuficiênte para a transferência " + saldo);
+            System.out.println("Valor insuficiênte para a transferência " + " Saldo Atual:" + saldo);
             return;
         }
         saldo -= valor;

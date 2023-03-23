@@ -13,7 +13,7 @@ public class ContaPoupanca implements Conta{
     }
     @Override
     public void sacar(double valor) {
-        if(saldo < valor){
+        if(valor > saldo){
             System.out.println("Valor inválido, saque maior que o seu saldo " + saldo);
 
         }else {
